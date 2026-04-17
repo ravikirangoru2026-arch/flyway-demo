@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS employee (
     city VARCHAR(100),
     state VARCHAR(100),
     postal_code VARCHAR(20),
-    country_code CHAR(2) DEFAULT 'US', -- ISO 3166-1 alpha-2
+    country_code VARCHAR(2) DEFAULT 'US', -- ISO 3166-1 alpha-2
 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
